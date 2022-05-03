@@ -1,7 +1,6 @@
 .PHONY: install
 install:
-ifeq (,$(wildcard $(HOME)/.profile))
-	cat profile >> $(HOME)/.profile
-else
 	ln -s $(CURDIR)/profile $(HOME)/.profile
-endif
+	@echo 'You may need to add the following line to your ~/.bash_profile.'
+	@echo
+	@echo '[[ -f ~/.profile ]] && . ~/.profile'
