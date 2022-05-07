@@ -31,14 +31,14 @@ fi
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
-export XDG_DESKTOP_DIR=$HOME/desktop
-export XDG_DOCUMENTS_DIR=$HOME/desktop
-export XDG_DOWNLOAD_DIR=$HOME/desktop
-export XDG_MUSIC_DIR=$HOME/desktop
-export XDG_PICTURES_DIR=$HOME/desktop
-export XDG_PUBLICSHARE_DIR=$HOME/desktop
-export XDG_TEMPLATES_DIR=$HOME/desktop
-export XDG_VIDEOS_DIR=$HOME/desktop
+export XDG_DESKTOP_DIR=$HOME/Desktop
+export XDG_DOCUMENTS_DIR=$HOME/Desktop
+export XDG_DOWNLOAD_DIR=$HOME/Desktop
+export XDG_MUSIC_DIR=$HOME/Desktop
+export XDG_PICTURES_DIR=$HOME/Desktop
+export XDG_PUBLICSHARE_DIR=$HOME/Desktop
+export XDG_TEMPLATES_DIR=$HOME/Desktop
+export XDG_VIDEOS_DIR=$HOME/Desktop
 
 MAKEFLAGS="-j $(nproc)" && export MAKEFLAGS
 export ANDROID_HOME=$XDG_DATA_HOME/android-sdk
