@@ -78,8 +78,12 @@ _add_path "$HOME/.local/opt/android-studio/bin"
 _add_path "$XDG_DATA_HOME/npm/bin"
 _add_path "$CARGO_HOME/bin"
 
-appengine_paths="$HOME/.local/opt/google-cloud-sdk /usr/lib/google-cloud-sdk"
+gem_paths="$XDG_DATA_HOME/gem/ruby/*/bin"
+for gem_path in $gem_paths; do
+  _add_path "$gem_path"
+done
 
+appengine_paths="$HOME/.local/opt/google-cloud-sdk /usr/lib/google-cloud-sdk"
 for appengine_path in $appengine_paths; do
   _add_path "$appengine_path/bin"
   _add_path "$appengine_path/platform/google_appengine"
