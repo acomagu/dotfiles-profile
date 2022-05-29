@@ -49,6 +49,7 @@ export AWS_SHARED_CREDENTIALS_FILE=$XDG_CONFIG_HOME/aws/credentials
 export BASH_ENV=$XDG_CONFIG_HOME/bash/profile # The startup file loaded when Bash is not login nor interactive shell.
 export CARGO_HOME=$XDG_DATA_HOME/cargo
 export CDK_HOME=$XDG_DATA_HOME/cdk
+export DIFFPROG='nvr -d'
 export EDITOR='nvr -cc split --remote-wait'
 export GHQ_ROOT=$HOME/.local/src
 export GNUPGHOME=$XDG_DATA_HOME/gnupg
